@@ -8,9 +8,33 @@
 
 //condition ? valueIfTrue : valueIfFalse
 
+
+//this one is fine for numbers
+function alphaSortNum(arrNum) {
+    return arrNum.sort((a, b) => (a - b));
+}
+
+function alphaSortNum2(arr) {
+    return arr.sort(function(a, b) {
+        return a - b;
+    });
+}
+
+console.log(alphaSortNum([2, 13, 4, 7]));
+console.log(alphaSortNum2([14, 2, 24, 17]));
+
+
+
 function alphaSort(arr) {
     return arr.sort(function(a, b) {
         return a === b ? 0 : a < b ? -1 : 1;
+    });
+}
+
+// Sort numbers in descending order
+function alphaSort(arr) {
+    return arr.sort(function(a, b) {
+        return a === b ? 0 : a < b ? 1 : -1;
     });
 }
 
