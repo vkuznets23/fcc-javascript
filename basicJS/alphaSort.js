@@ -14,6 +14,7 @@ function alphaSortNum(arrNum) {
     return arrNum.sort((a, b) => (a - b));
 }
 
+//this is the same but with function
 function alphaSortNum2(arr) {
     return arr.sort(function(a, b) {
         return a - b;
@@ -25,6 +26,7 @@ console.log(alphaSortNum2([14, 2, 24, 17]));
 
 
 
+// Sort numbers in ascending order (both nums and char)
 function alphaSort(arr) {
     return arr.sort(function(a, b) {
         return a === b ? 0 : a < b ? -1 : 1;

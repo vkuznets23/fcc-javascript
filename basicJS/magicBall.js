@@ -3,7 +3,7 @@
 let userName = "";
 userName === "" ? console.log("Hello") : console.log(`Hello ${userName}`);  
 
-let userQuestion = "";
+let userQuestion = "Is 10 beers enough?";
 let randomNumber = Math.floor(Math.random() * 8);
 let eightBall = "";
 
